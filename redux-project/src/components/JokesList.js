@@ -12,11 +12,17 @@ const JokesList = (props) => {
     }
     return (
         <div>
-            <h2>Ready For a Laugh?</h2>
+            {!props.jokes && <h2>Ready For a Laugh?</h2>}
             <button onClick={handleClick}>Get Jokes</button>
             {props.error && <p>{props.error}</p>}
-            {props.jokes && <div>
-                {props.jokes.map(joke => <h3 key={joke.id}>{joke.setup} {joke.punchline}</h3>)}
+            {props.jokes && <div className='jokesBox'>
+                {props.jokes.map(joke => {
+                    return <div key={joke.id} className='jokeBox'>
+                        <h3>{joke.setup}</h3>
+                        <h4 id={`punchline${joke.id}`}>{joke.punchline}</h4>
+                    </div>
+                })
+                }
             </div>}
         </div>
     )

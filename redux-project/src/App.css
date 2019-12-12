@@ -1,37 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|VT323&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'VT323', monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Press Start 2P', cursive;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color:black;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 4rem 0;
+  margin-bottom: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.jokesBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  border: 4rem solid #554840;
+  border-radius: 5px;
+  background-color: black;
+  background-image: radial-gradient(
+    rgba(0, 150, 0, 0.75), black 120%
+  );
+  min-height: 80vh;
+  transition: all 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.jokeBox {
+  width: 45%;
+  color: white;
+  text-shadow: 0 0 5px #C8C8C8;
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px dashed gray;
+  border-radius: 3px;
+}
+
+.jokeBox:hover {
+  transform: scale(1.2);
+}
+
+::selection {
+  background: #0080FF;
+  text-shadow: none;
 }
