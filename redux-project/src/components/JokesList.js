@@ -1,6 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from 'react-loader-spinner';
+
 import { getData } from '../actions';
 import Joke from './Joke';
 
@@ -16,6 +19,12 @@ const JokesList = (props) => {
         <div>
             {!props.jokes && <h2>Ready For a Laugh?</h2>}
             <button onClick={handleClick}>Get Jokes</button>
+            {props.isFetching && <Loader
+                type="Puff"
+                color="#00BFFF"
+                height={100}
+                width={100}/>
+            }
             {props.error && <p>{props.error}</p>}
             {props.jokes && <div className='jokesBox'>
                 {props.jokes.map(joke => <Joke joke={joke} key={joke.id}/>)}
