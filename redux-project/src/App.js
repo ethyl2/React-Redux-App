@@ -1,14 +1,13 @@
 import React from 'react';
 
 import './App.css';
-import JokesList from './components/JokesList'
+import Header from './components/Header';
+import JokesList from './components/JokesList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Awesome Programming Jokes</h1>
-      </header>
+      <Header />
       <JokesList />
     </div>
   );

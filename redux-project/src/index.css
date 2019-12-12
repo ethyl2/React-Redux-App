@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 h2 {
@@ -27,6 +27,8 @@ h3 {
 h4 {
   font-size: 2rem;
   margin-top: 1rem;
+  background: #0080FF;
+  padding: 0.25rem;
 }
 
 p {
@@ -39,6 +41,9 @@ button {
   margin: 1rem;
   font-family: 'Press Start 2P', cursive;
   transition: all 0.2s;
+  background: #004400;
+  border: none;
+  border-radius: 2px;
 }
 
 button:hover {

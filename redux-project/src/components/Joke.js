@@ -9,8 +9,9 @@ const Joke = props => {
 
     return (
         <div key={props.joke.id} className='jokeBox'>
+            <p>#{props.joke.id}</p>
             <h3>{props.joke.setup}</h3>
-            {!visible && <button onClick={togglePunchline}>Show Answer</button>}
+            {!visible && <button onClick={togglePunchline} className='answer-button'>Show Answer</button>}
             {visible && <h4>{props.joke.punchline}</h4>}
         </div>
     )

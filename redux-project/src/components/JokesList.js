@@ -18,7 +18,7 @@ const JokesList = (props) => {
             <button onClick={handleClick}>Get Jokes</button>
             {props.error && <p>{props.error}</p>}
             {props.jokes && <div className='jokesBox'>
-                {props.jokes.map(joke => <Joke joke={joke} />)}
+                {props.jokes.map(joke => <Joke joke={joke} key={joke.id}/>)}
                 </div>
             }
         </div>

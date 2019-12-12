@@ -3,7 +3,6 @@ export const FETCH_DATA_START = 'FETCH_DATA_START';
 export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS';
 export const FETCH_DATA_FAILURE = 'FETCH_DATA_FAILURE';
 
-const source_test = "https://pokeapi.co/api/v2/pokemon/";
 const source = 'https://official-joke-api.appspot.com/jokes/programming/ten';
 
 export const getData = () => dispatch => {

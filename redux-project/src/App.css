@@ -54,3 +54,9 @@ h1 {
   background: #0080FF;
   text-shadow: none;
 }
+
+.answer-button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color:beige;
+}
