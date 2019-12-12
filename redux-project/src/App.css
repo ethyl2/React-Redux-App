@@ -60,3 +60,8 @@ h1 {
   padding: 0.5rem;
   background-color:beige;
 }
+
+.comicBox {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+}
