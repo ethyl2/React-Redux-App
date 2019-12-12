@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import { getData } from '../actions';
+import Joke from './Joke';
 
 const JokesList = (props) => {
 
@@ -10,20 +11,16 @@ const JokesList = (props) => {
         e.preventDefault();
         props.getData();
     }
+
     return (
         <div>
             {!props.jokes && <h2>Ready For a Laugh?</h2>}
             <button onClick={handleClick}>Get Jokes</button>
             {props.error && <p>{props.error}</p>}
             {props.jokes && <div className='jokesBox'>
-                {props.jokes.map(joke => {
-                    return <div key={joke.id} className='jokeBox'>
-                        <h3>{joke.setup}</h3>
-                        <h4 id={`punchline${joke.id}`}>{joke.punchline}</h4>
-                    </div>
-                })
-                }
-            </div>}
+                {props.jokes.map(joke => <Joke joke={joke} />)}
+                </div>
+            }
         </div>
     )
 };
