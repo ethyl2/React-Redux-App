@@ -20,10 +20,10 @@ const JokesList = (props) => {
             {!props.jokes && <h2>Ready For a Laugh?</h2>}
             <button onClick={handleClick}>Get Jokes</button>
             {props.isFetching && <Loader
-                type="Puff"
-                color="#00BFFF"
-                height={100}
-                width={100}/>
+                type="ThreeDots"
+                color="green"
+                height={200}
+                width={200}/>
             }
             {props.error && <p>{props.error}</p>}
             {props.jokes && <div className='jokesBox'>
