@@ -33,6 +33,7 @@ h4 {
 
 p {
   font-size: 1.25rem;
+  padding: 1rem;
 }
 
 button {
@@ -50,4 +51,27 @@ button:hover {
   background-color: black;
   color: white;
   transform: scale(1.2);
+}
+
+a {
+  font-size: 1.25rem;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  color: green;
+  background: black;
+  padding: 0.15rem;
+}
+
+footer {
+  margin-top: 2rem;
+  background: #554840;
+  padding: 1rem;
+}
+
+.imgContainer {
+  width: 100%;
+}
+
+.imgContainer img {
+  max-width: 100%;
 }

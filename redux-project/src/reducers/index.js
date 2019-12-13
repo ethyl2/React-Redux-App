@@ -5,7 +5,7 @@ import {
 } from '../actions';
 
 const initialState = {
-    jokes: [],
+    jokes: null,
     error: '',
     isFetching: false
 }

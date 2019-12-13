@@ -19,7 +19,9 @@ const Comic = () => {
             {comic && <div className='comicBox'>
                 <h2>{comic.month}/{comic.day}/{comic.year}</h2>
                 <h2>{comic.title}</h2>
-                <img src={comic.img} alt={comic.alt} />
+                <div className='imgContainer'>
+                    <img src={comic.img} alt={comic.alt} />
+                </div>
                 </div>}
         </div>
     )
