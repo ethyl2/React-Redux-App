@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  letter-spacing: 0.25rem;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  background: #0080FF;
+  padding: 0.25rem;
+}
+
+p {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+button {
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Press Start 2P', cursive;
+  transition: all 0.2s;
+  background: #004400;
+  border: none;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+}
+
+a {
+  font-size: 1.25rem;
+  margin: 1rem 2rem;
+  text-decoration: none;
+  color: green;
+  background: black;
+  padding: 0.15rem;
+}
+
+footer {
+  margin-top: 2rem;
+  background: #554840;
+  padding: 1rem;
+}
+
+.imgContainer {
+  width: 100%;
+}
+
+.imgContainer img {
+  max-width: 100%;
+}

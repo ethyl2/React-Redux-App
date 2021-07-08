@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|VT323&display=swap');
+
+.App {
+  text-align: center;
+  font-family: 'VT323', monospace;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.App-header {
+  background-color:black;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 1rem;
+}
+
+.jokesBox {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  border: 4rem solid #554840;
+  border-radius: 5px;
+  background-color: black;
+  background-image: radial-gradient(
+    rgba(0, 150, 0, 0.75), black 120%
+  );
+  min-height: 80vh;
+  transition: all 0.2s;
+}
+
+.jokeBox {
+  width: 45%;
+  color: white;
+  text-shadow: 0 0 5px #C8C8C8;
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px dashed gray;
+  border-radius: 3px;
+}
+
+.jokeBox:hover {
+  transform: scale(1.2);
+}
+
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
+.answer-button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color:beige;
+}
+
+.comicBox {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+}
